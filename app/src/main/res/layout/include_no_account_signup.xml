@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:textSize="@dimen/ts_13sp"
+            android:textColor="@color/text_color_grey"
+            android:lineSpacingExtra="@dimen/size_6dp"
+            android:text="@string/there_is_no_account_with_this_email_address_yet_do_you_want_to_sign_up"
+            />
+
+        <org.ovi.widget.OviButton
+            android:id="@+id/btnYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:paddingTop="@dimen/margin_15dp"
+            android:paddingBottom="@dimen/margin_15dp"
+            android:text="@string/yes_sign_up"
+            android:textColor="@color/white_1000"
+            android:textSize="@dimen/ts_13sp"
+             />
+
+
+
+    </LinearLayout>
+
+</layout>

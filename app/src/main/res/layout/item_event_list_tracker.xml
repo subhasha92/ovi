@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/ovi_dale_carnegie_training_class"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/ts_16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDatenLoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/june_23_2022_fremont_ca"
+            android:textColor="@color/grey4"
+            android:textSize="@dimen/ts_12sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAttendStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/attended"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/ts_14sp" />
+
+        <include
+            android:id="@+id/incSurveyBtn"
+            layout="@layout/include_take_survey_btns"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</layout>

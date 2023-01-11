@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/guideline_20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="JYJ 2011 JYJ Worldwide Concert Barceloa"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/ts_18sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis."
+            android:textColor="@color/grey4"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="Upcoming"
+            app:labelText="Status"
+            app:labelTextSize="12"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="Online"
+            app:labelText="Type"
+            app:labelTextSize="12"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/ltStatus" />
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="Zoom Link"
+            app:labelText="Link"
+            app:labelTextSize="12"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/ltType" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCopyLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Copy Link"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/ts_12sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/ltLink"
+            app:layout_constraintStart_toEndOf="@id/ltLink" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCopyInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Copy Invite"
+            android:visibility="gone"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/ts_12sp"
+            app:layout_constraintBottom_toBottomOf="@id/ltLink"
+            app:layout_constraintStart_toEndOf="@id/tvCopyLink" />
+
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="Jun 23, 2022"
+            app:labelText="Date"
+            app:labelTextSize="12"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/ltLink" />
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="9:00 am ~ 5:00 pm"
+            app:labelText="Time"
+            app:labelTextSize="12"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/ltDate" />
+
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltGift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="Free Tshirt"
+            app:labelText="Incentive"
+            app:labelTextSize="12"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/ltTime" />
+
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltEventOwner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="Name of the member"
+            app:labelText="Event Owner"
+            app:labelTextSize="12"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/ltGift" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWhocanjoin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/who_can_join"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/ts_18sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/ltEventOwner" />
+
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltYouthofage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="14 to 16 Years"
+            app:labelText="Youth of age"
+            app:labelTextSize="12"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tvWhocanjoin" />
+
+        <org.ovi.widget.WidgetLabelledText
+            android:id="@+id/ltFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            app:inputText="New York County"
+            app:labelText="From"
+            app:labelTextSize="12"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/ltYouthofage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

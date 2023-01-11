@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/guideline_20dp" />
+
+        <LinearLayout
+            android:id="@+id/lLayTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toTopOf="@+id/guideline_top">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/_3_other_details"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/ts_18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_2dp"
+                android:layout_weight="1"
+                android:clickable="false" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintTop_toTopOf="@+id/guideline_top"
+                app:srcCompat="@drawable/ic_arrow_down" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lLayDrop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/lLayTop">
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:inputText="Youth or Young Adult"
+                app:labelText="@string/role" />
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:inputText="Annie Hall"
+                app:labelText="@string/name" />
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:inputText="12 Jan 1991"
+                app:labelText="@string/date_of_birth" />
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stRace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:inputText="American Indian or Alaska Native"
+                app:labelText="@string/race" />
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stEthnicity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:inputText="Hispanic"
+                app:labelText="@string/ethnicity" />
+
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:inputText="Female"
+                app:labelText="Gender identity" />
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stShirtSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:labelText="Shirt Size" />
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:inputType="textEmailAddress"
+                app:inputText="annie.hall@ovi.com"
+                app:labelText="@string/email" />
+
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:inputType="number"
+                app:inputText="+1 234 567 8901"
+                app:labelText="@string/phone_number" />
+
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:inputType="number"
+                android:maxLength="5"
+                app:inputText="99501"
+                app:labelText="@string/zipcode" />
+
+
+           <include
+               android:id="@+id/incQuest"
+               android:visibility="gone"
+               layout="@layout/include_10_question_profile"/>
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:inputType="textLongMessage"
+                app:inputText="lorem ipsum"
+                app:labelText="@string/group" />
+
+
+            <org.ovi.widget.WidgetLabelledText
+                android:id="@+id/stJoined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:inputType="textLongMessage"
+                app:inputText="lorem ipsum"
+                app:labelText="@string/joined_on" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vwBtm"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_14dp"
+            android:background="@color/line_color_light"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/lLayTop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

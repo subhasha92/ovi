@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/incAddress"
+            layout="@layout/include_card_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp" />
+
+        <LinearLayout
+            android:id="@+id/lLayAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/incZip"
+                layout="@layout/include_card_autocomplete_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp" />
+
+            <include
+                android:id="@+id/incBuilding"
+                layout="@layout/include_card_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp" />
+
+            <include
+                android:id="@+id/incArea"
+                layout="@layout/include_card_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp" />
+
+            <include
+                android:id="@+id/incState"
+                layout="@layout/include_card_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp" />
+
+            <include
+                android:id="@+id/incCountry"
+                layout="@layout/include_card_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

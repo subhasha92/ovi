@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/navigation_home">
+
+
+    <keep_state_fragment
+        android:id="@+id/navigation_home"
+        android:name="org.ovi.feature.home.view.fragment.HomeFragment"
+        android:label="HomeFragment" />
+    <keep_state_fragment
+        android:id="@+id/navigation_event"
+        android:name="org.ovi.feature.events.view.fragment.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" />
+    <keep_state_fragment
+        android:id="@+id/navigation_profile"
+        android:name="org.ovi.feature.profile.view.fragment.ProfileHolderFragment"
+        android:label="fragment_profile_holder"
+        tools:layout="@layout/fragment_profile_holder" />
+    <keep_state_fragment
+        android:id="@+id/navigation_menu"
+        android:name="org.ovi.feature.menu.view.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+</navigation>

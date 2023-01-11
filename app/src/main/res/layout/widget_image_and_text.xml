@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/clayParent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_brown_stroke_12radius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="156dp"
+                android:layout_height="156dp"
+                android:layout_margin="@dimen/size_1dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="@dimen/margin_12dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/temp_img" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="OVI"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/ts_12sp"
+            app:layout_constraintEnd_toEndOf="@id/lLay"
+            app:layout_constraintStart_toStartOf="@id/lLay"
+            app:layout_constraintTop_toBottomOf="@id/lLay" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

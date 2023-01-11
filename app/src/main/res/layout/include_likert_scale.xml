@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:layout_width="@dimen/margin_30dp"
+        android:layout_height="@dimen/margin_30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:button="@null"
+        app:layout_constraintBottom_toTopOf="@id/rbDSatisfied"
+        android:background="@drawable/radio_button_check_selector"
+        android:id="@+id/rbVSatisfied"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rbVSatisfied"
+        android:text="Very dissatisfied"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="@dimen/ts_16sp"
+        android:textColor="@color/light_blue"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        app:layout_constraintBottom_toBottomOf="@id/rbVSatisfied"
+        app:layout_constraintEnd_toStartOf="@id/rbVSatisfied"/>
+
+    <View
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        android:background="@color/grey7"
+        android:id="@+id/vwLine"
+        app:layout_constraintTop_toBottomOf="@id/rbVSatisfied"
+        app:layout_constraintBottom_toTopOf="@id/rbDSatisfied"
+        app:layout_constraintStart_toStartOf="@id/rbVSatisfied"
+        app:layout_constraintEnd_toEndOf="@id/rbVSatisfied"/>
+
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:layout_width="@dimen/margin_30dp"
+        android:layout_height="@dimen/margin_30dp"
+        app:layout_constraintTop_toBottomOf="@id/rbVSatisfied"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rbNeutral"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:button="@null"
+        android:background="@drawable/radio_button_check_selector"
+        android:id="@+id/rbDSatisfied"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rbDSatisfied"
+        android:text="Dissatisfied"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="@dimen/ts_16sp"
+        android:textColor="@color/light_blue"
+        android:layout_marginStart="@dimen/margin_8dp"
+        app:layout_constraintBottom_toBottomOf="@id/rbDSatisfied"
+        app:layout_constraintStart_toEndOf="@id/rbDSatisfied"/>
+
+
+    <View
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        android:background="@color/grey7"
+        android:id="@+id/vwLine2"
+        app:layout_constraintBottom_toTopOf="@id/rbNeutral"
+        app:layout_constraintTop_toBottomOf="@id/rbDSatisfied"
+        app:layout_constraintStart_toStartOf="@id/rbVSatisfied"
+        app:layout_constraintEnd_toEndOf="@id/rbVSatisfied"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:layout_width="@dimen/margin_30dp"
+        android:layout_height="@dimen/margin_30dp"
+        app:layout_constraintTop_toBottomOf="@id/rbDSatisfied"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rbSatisfied"
+        android:button="@null"
+        android:background="@drawable/radio_button_check_selector"
+        android:id="@+id/rbNeutral"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rbNeutral"
+        android:text="Neutral"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="@dimen/ts_16sp"
+        android:textColor="@color/light_blue"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        app:layout_constraintBottom_toBottomOf="@id/rbNeutral"
+        app:layout_constraintEnd_toStartOf="@id/rbNeutral"/>
+
+    <View
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        android:background="@color/grey7"
+        android:id="@+id/vwLine3"
+        app:layout_constraintBottom_toTopOf="@id/rbSatisfied"
+        app:layout_constraintTop_toBottomOf="@id/rbNeutral"
+        app:layout_constraintStart_toStartOf="@id/rbVSatisfied"
+        app:layout_constraintEnd_toEndOf="@id/rbVSatisfied"/>
+
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:layout_width="@dimen/margin_30dp"
+        android:layout_height="@dimen/margin_30dp"
+        app:layout_constraintTop_toBottomOf="@id/rbNeutral"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:button="@null"
+        android:background="@drawable/radio_button_check_selector"
+
+        android:id="@+id/rbSatisfied"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rbSatisfied"
+        android:text="Satisfied"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="@dimen/ts_16sp"
+        android:textColor="@color/light_blue"
+        android:layout_marginStart="@dimen/margin_8dp"
+        app:layout_constraintBottom_toBottomOf="@id/rbSatisfied"
+        app:layout_constraintStart_toEndOf="@id/rbSatisfied"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

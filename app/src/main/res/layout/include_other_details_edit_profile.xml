@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/guideline_20dp" />
+
+        <LinearLayout
+            android:id="@+id/lLayTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toTopOf="@+id/guideline_top">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/_3_other_details"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/ts_18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_2dp"
+                android:layout_weight="1"
+                android:clickable="false" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintTop_toTopOf="@+id/guideline_top"
+                app:srcCompat="@drawable/ic_arrow_down" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lLayDrop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/lLayTop">
+
+            <org.ovi.widget.OviLabeledEditText
+                android:id="@+id/etDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:inputType="date"
+                app:endIconDrawable="@drawable/ic_fi_calendar"
+                app:labelText="@string/date_of_birth" />
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/gender" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etOtherGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@drawable/bg_edit_text_white_brown_border"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_the_value"
+                android:padding="@dimen/margin_14dp"
+                android:paddingStart="@dimen/margin_14dp"
+                android:paddingEnd="@dimen/margin_14dp"
+                android:textSize="@dimen/ts_16sp"
+                android:visibility="gone"
+
+                />
+
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddShirtSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/shirt_size" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etOtherShirt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@drawable/bg_edit_text_white_brown_border"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_the_value"
+                android:padding="@dimen/margin_14dp"
+                android:paddingStart="@dimen/margin_14dp"
+                android:paddingEnd="@dimen/margin_14dp"
+                android:textSize="@dimen/ts_16sp"
+                android:visibility="gone"
+
+                />
+
+            <org.ovi.widget.OviSwitchEdit
+                android:id="@+id/stZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:inputType="number"
+                app:inputText="lorem ipsum"
+                app:labelText="@string/zipcode" />
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddRace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/race" />
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddEthnicity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/ethnicity" />
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/group" />
+
+            <org.ovi.widget.OviLabeledEditText
+                android:id="@+id/etJoinedOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:inputType=""
+                app:endIconDrawable="@drawable/ic_fi_calendar"
+                app:labelText="@string/joined_on" />
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/role" />
+
+            <include
+                android:id="@+id/incQuest"
+                layout="@layout/include_10_questions_edit_profile"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vwBtm"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_14dp"
+            android:background="@color/line_color_light"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/lLayDrop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

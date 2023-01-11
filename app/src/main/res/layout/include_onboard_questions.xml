@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/incEmployed"
+            layout="@layout/include_card_dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp" />
+
+
+        <include
+            android:id="@+id/incEducation"
+            layout="@layout/include_card_dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp" />
+
+
+        <include
+            android:id="@+id/incAdultLife"
+            layout="@layout/include_card_dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp" />
+
+
+<!--        <include-->
+<!--            android:id="@+id/incHomeLess"-->
+<!--            layout="@layout/include_card_dd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="@dimen/margin_10dp" />-->
+
+
+<!--        <include-->
+<!--            android:id="@+id/incAlcoholAsses"-->
+<!--            layout="@layout/include_card_dd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="@dimen/margin_10dp" />-->
+
+
+<!--        <include-->
+<!--            android:id="@+id/incJail"-->
+<!--            layout="@layout/include_card_dd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="@dimen/margin_10dp" />-->
+
+
+        <include
+            android:id="@+id/incChild"
+            layout="@layout/include_card_dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp" />
+
+
+        <include
+            android:id="@+id/incMedical"
+            layout="@layout/include_card_dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp" />
+
+
+<!--        <include-->
+<!--            android:id="@+id/incFinacial"-->
+<!--            layout="@layout/include_card_dd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="@dimen/margin_10dp" />-->
+
+
+        <include
+            android:id="@+id/incFosterCare"
+            layout="@layout/include_card_dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp" />
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:cardCornerRadius="@dimen/margin_5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_35dp"
+                android:background="@drawable/bg_radio_border_blue"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_bg_color_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="@string/profile"
+                    android:textColor="@color/item_text_color_selector_white_blue"
+                    android:textSize="@dimen/ts_13sp"
+                    android:theme="@style/SelectableItemForeground" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_bg_color_selector"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="@string/event_track"
+                    android:textColor="@color/item_text_color_selector_white_blue"
+                    android:textSize="@dimen/ts_13sp"
+                    android:theme="@style/SelectableItemForeground" />
+
+            </RadioGroup>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

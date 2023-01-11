@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.events.view.activity.EventsDetailActivity">
+
+    <org.ovi.widget.OviEventToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Event Details"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:id="@+id/scrollView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/incImage"
+                layout="@layout/include_image_event_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/incText"
+                layout="@layout/include_text_event_details" />
+
+            <org.ovi.widget.OviButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:text="@string/register"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/tvTakePre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_radio_border_blue"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_15dp"
+                    android:id="@+id/tvTextSurveyPre"
+                    android:text="@string/take_pre_survey"
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/ts_14sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:background="@drawable/bg_radio_border_blue"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center"
+                android:padding="@dimen/margin_15dp"
+                android:text="@string/cancel"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/ts_14sp"
+                android:visibility="gone" />
+
+
+            <include
+                android:id="@+id/incSurveyBtn"
+                layout="@layout/include_take_survey_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/incNoEvent"
+        android:visibility="gone"
+        layout="@layout/include_no_event_detail"/>
+
+
+<org.ovi.widget.ProgressView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/progressView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "org.ovi.app",
+      "sha256_cert_fingerprints": [
+        "00:96:AD:CC:42:E5:54:94:10:7F:B6:36:FC:F8:98:A5:50:89:A6:20:55:6A:A8:5F:AA:2B:3D:9B:D4:92:A9:B4"
+      ]
+    }
+  }
+]

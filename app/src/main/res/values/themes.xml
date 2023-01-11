@@ -1,0 +1,132 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OVI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="colorPrimaryVariant">@color/dark_blue</item>
+        <item name="colorOnPrimary">@color/white_1000</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Secondary brand color. -->
+    </style>
+
+
+    <style name="ErrorTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:textSize">@dimen/ts_14sp</item>
+    </style>
+
+    <style name="Theme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="colorPrimaryVariant">@color/dark_blue</item>
+        <item name="colorOnPrimary">@color/white_1000</item>
+        <item name="android:screenOrientation">portrait</item>
+
+    </style>
+
+    <style name="Theme.Auth" parent="Theme.OVI">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:statusBarColor" >@color/login_bg</item>
+    </style>
+
+    <style name="Theme.TransStatus" parent="Theme.OVI">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="Theme.FullScreen" parent="Theme.OVI">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowEnterTransition">@transition/slide_from_bottom</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+    </style>
+
+
+    <style name="RippleCircle">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">@drawable/bg_ripple_circle</item>
+    </style>
+
+
+    <style name="Widget.MPM.Menu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:colorBackground">@color/mpm_material_grey_50</item>
+        <item name="android:theme">@style/Theme.AppCompat.Light</item>
+        <item name="mpm_primaryTextColor">@color/mpm_black_87_opacity</item>
+        <item name="mpm_secondaryTextColor">@color/mpm_black_54_opacity</item>
+        <item name="mpm_activeIconColor">@color/mpm_black_54_opacity</item>
+        <item name="mpm_separatorColor">@color/mpm_black_12_opacity</item>
+        <item name="mpm_paddingBottom">@dimen/mpm_popup_menu_vertical_padding</item>
+        <item name="mpm_paddingStart">0dp</item>
+        <item name="mpm_paddingEnd">0dp</item>
+        <item name="mpm_paddingTop">@dimen/mpm_popup_menu_vertical_padding</item>
+    </style>
+
+    <style name="Widget.MPM.Menu.Dark">
+        <item name="android:colorBackground">@color/mpm_material_grey_850</item>
+        <item name="android:theme">@style/Theme.AppCompat</item>
+        <item name="mpm_primaryTextColor">@color/mpm_white</item>
+        <item name="mpm_secondaryTextColor">@color/mpm_white_70_opacity</item>
+        <item name="mpm_activeIconColor">@color/mpm_white</item>
+        <item name="mpm_separatorColor">@color/mpm_white_12_opacity</item>
+        <item name="mpm_paddingBottom">@dimen/mpm_popup_menu_vertical_padding</item>
+        <item name="mpm_paddingStart">0dp</item>
+        <item name="mpm_paddingEnd">0dp</item>
+        <item name="mpm_paddingTop">@dimen/mpm_popup_menu_vertical_padding</item>
+    </style>
+
+    <style name="Widget.MPM.Item" parent="">
+        <item name="android:background">?attr/listChoiceBackgroundIndicator</item>
+    </style>
+
+
+    <style name="Widget.MPM.Menu.RoundedCorners">
+        <item name="android:popupBackground">@drawable/rounded_popup_background</item>
+    </style>
+
+    <style name="SelectableItemForeground">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="SelectableItemForegroundBorderless">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="SelectableItemBackgroundBorderless">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="RippleEffect">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:selectableItemBackground">@drawable/bg_ripple_circle</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ScrollingPagerIndicator">
+        <item name="spi_dotColor">@android:color/darker_gray</item>
+        <item name="spi_dotSelectedColor">@android:color/darker_gray</item>
+        <item name="spi_dotSize">6dp</item>
+        <item name="spi_dotSelectedSize">10dp</item>
+        <item name="spi_dotSpacing">8dp</item>
+        <item name="spi_visibleDotCount">5</item>
+        <item name="spi_visibleDotThreshold">2</item>
+        <item name="spi_looped">false</item>
+    </style>
+
+</resources>

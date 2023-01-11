@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/top_banner"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ivBanner"
+            app:layout_constraintBottom_toBottomOf="@id/ivBanner"
+            android:text="My Profile"
+            android:id="@+id/tvTitle"
+            android:layout_margin="@dimen/margin_16dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:textSize="@dimen/ts_16sp"
+            android:drawablePadding="@dimen/margin_6dp"
+            android:drawableStart="@drawable/ic_mini_logo"
+            android:drawableTint="@color/white_1000"
+            android:textColor="@color/white_1000"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

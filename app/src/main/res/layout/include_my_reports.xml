@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/my_report"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/ts_18sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            app:cardUseCompatPadding="true"
+            android:elevation="@dimen/size_2dp"
+            app:cardElevation="@dimen/size_2dp"
+            app:cardBackgroundColor="@color/white_1000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHead">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEventAttended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16dp"
+                android:elevation="@dimen/margin_10dp"
+                android:layout_alignStart="@id/cardChart"
+                android:layout_alignTop="@id/cardChart"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/event_attended_digit"
+                android:textColor="@color/black_1000"
+                android:textSize="@dimen/ts_12sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="@dimen/margin_10dp" />
+
+                <org.ovi.widget.ProgressView
+                    android:id="@+id/progressView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

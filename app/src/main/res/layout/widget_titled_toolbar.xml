@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cLay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <include layout="@layout/guideline_5dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:contentDescription="@string/back_button"
+            android:padding="@dimen/padding_5dp"
+            android:labelFor="@+id/ivBack"
+            android:scaleType="center"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_mini_logo"
+            android:drawablePadding="@dimen/padding_6dp"
+
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="@dimen/ts_13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_bottom"
+            app:layout_constraintEnd_toStartOf="@id/ivOption"
+            app:layout_constraintStart_toEndOf="@id/ivBack"
+            tools:text="Join OVI network" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:contentDescription="@string/close_button"
+            android:padding="@dimen/padding_5dp"
+            android:scaleType="center"
+            android:labelFor="@+id/ivOption"
+            android:src="@drawable/ic_grey_x"
+            android:theme="@style/RippleCircle"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:elevation="@dimen/margin_10dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

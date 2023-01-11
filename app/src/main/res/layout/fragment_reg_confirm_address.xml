@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/guideline_20dp" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/btnNext"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20dp"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="@string/please_confirm_your_address"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/ts_20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@+id/guideline_top" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:lineSpacingExtra="@dimen/size_5dp"
+                    android:text="@string/use_a_mailing_address_that_we_can_send_you_relevant_information_educational_materials_and_other_cool_stuff"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/ts_12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+                <org.ovi.widget.OviAutocomplete
+                    android:id="@+id/etZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:background="@drawable/bg_grey_bordered"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/opensans_bold"
+                    android:hint="@string/enter_the_zipcode"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    app:inputTextColor="@color/text_color_dark_grey"
+                    app:labelText="@string/zipcode"
+                    app:labelTextColor="@color/text_color_dark_grey"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/etCountry" />
+
+                <org.ovi.widget.OviLabeledEditText
+                    android:id="@+id/etBuilding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30dp"
+                    android:background="@drawable/bg_grey_bordered"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/opensans_bold"
+                    android:hint="@string/_123_main_street"
+                    app:inputTextColor="@color/text_color_dark_grey"
+                    app:labelText="@string/building_no_street"
+                    app:labelTextColor="@color/text_color_dark_grey"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/tvText" />
+
+
+                <org.ovi.widget.OviSwitchEdit
+                    android:id="@+id/etArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:fontFamily="@font/opensans_bold"
+                    app:inputText=""
+                    app:labelText="@string/area_city"
+                    app:labelTextColor="@color/text_color_dark_grey"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/etBuilding" />
+
+                <org.ovi.widget.OviSwitchEdit
+                    android:id="@+id/etState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:fontFamily="@font/opensans_bold"
+                    app:inputText=""
+                    app:inputTextColor="@color/text_color_dark_grey"
+                    app:labelText="@string/state"
+                    app:labelTextColor="@color/text_color_dark_grey"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/etArea" />
+
+
+                <org.ovi.widget.OviSwitchEdit
+                    android:id="@+id/etCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:fontFamily="@font/opensans_bold"
+                    app:inputText=""
+                    app:inputTextColor="@color/text_color_dark_grey"
+                    app:labelText="@string/country"
+                    app:labelTextColor="@color/text_color_dark_grey"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/etState" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <org.ovi.widget.OviButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:text="@string/confirm_address_caps"
+            app:layout_constraintBottom_toTopOf="@+id/tvSkip"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSkip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:padding="@dimen/margin_12dp"
+            android:text="@string/skip"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_13sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_bottom"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start" />
+
+        <org.ovi.widget.ProgressView
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="org.ovi.data.local.SelectionModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@{model.selected? @drawable/bg_blue_rounded : @drawable/bg_rounded_blue_corner}"
+            android:fontFamily="@font/opensans_semibold"
+            android:paddingStart="32dp"
+            android:paddingTop="@dimen/margin_16dp"
+            android:gravity="center"
+            android:paddingEnd="32dp"
+            android:paddingBottom="@dimen/margin_16dp"
+            android:text="@{model.content}"
+            android:textColor="@{model.selected? @color/white_1000 : @color/light_blue}"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,155 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+apply from: '../deps.gradle'
+def versionPropsFile = file('../version.properties')
+def keyStorePropertiesFile = rootProject.file("keystore.properties")
+def keyStoreProperties = new Properties()
+keyStoreProperties.load(new FileInputStream(keyStorePropertiesFile))
+
+android {
+    compileSdk versions.compileSdk
+    if (versionPropsFile.canRead()) {
+        defaultConfig {
+            Properties versionProps = new Properties()
+            versionProps.load(new FileInputStream(versionPropsFile))
+            applicationId "org.ovi"
+            minSdkVersion versions.minSdk
+            targetSdkVersion versions.compileSdk
+            multiDexEnabled true
+            versionName versionProps['VERSION_NAME']
+            versionCode versionProps['VERSION_CODE'].toInteger()
+            resValue "string", "version_code", versionProps['VERSION_NUMBER']
+            signingConfig signingConfigs.debug
+            vectorDrawables.useSupportLibrary = true
+            ndkVersion "24.0.8215888"
+            ndk{
+                debugSymbolLevel = 'FULL'
+            }
+//            android.buildTypes.release.ndk.debugSymbolLevel = 'FULL'
+
+            testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        }
+    } else {
+        throw new FileNotFoundException("Could not read version.properties!")
+    }
+    signingConfigs {
+        release {
+            keyAlias keyStoreProperties['releaseKeyAlias']
+            keyPassword = keyStoreProperties['releaseKeyPassword']
+            storeFile rootProject.file(keyStoreProperties['releaseKeyStore'])
+            storePassword keyStoreProperties['releaseKeyStorePassword']
+        }
+        debug {
+            keyAlias keyStoreProperties['debugKeyAlias']
+            keyPassword = keyStoreProperties['debugKeyPassword']
+            storeFile rootProject.file(keyStoreProperties['debugKeyStore'])
+            storePassword keyStoreProperties['debugKeyStorePassword']
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            ext.enableCrashlytics = false
+            ext.alwaysUpdateBuildId = false
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    flavorDimensions "dev, prod"
+    productFlavors {
+        dev {
+            applicationIdSuffix ".dev"
+            resValue "string", "app_name", "OVI DEV"
+            resValue "string", "prefix_number", "+91"
+            buildConfigField "String", "BASE_URL", "\"" + getDevBaseUrl() + "\""
+            resConfigs "en", "xxhdpi"
+        }
+        prod {
+            applicationIdSuffix ".app"
+            resValue "string", "app_name", "One Voice Impact"
+            resValue "string", "prefix_number", "+1"
+            buildConfigField "String", "BASE_URL", "\"" + getProdBaseUrl() + "\""
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "ovi.${variant.name}-${variant.versionName}.apk"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+    bundle {
+        storeArchive {
+            enable = false
+        }
+    }
+}
+
+dependencies {
+
+    implementation appCompat
+    implementation firebaseAnalytics
+    implementation firebaseCrashalytics
+    implementation firebaseMessaging
+    testImplementation testLibraries
+    androidTestImplementation androidTestLibraries
+    implementation base
+    implementation mpAndroidChart
+    implementation material
+    implementation networking
+    implementation lifecycleArch
+    implementation coroutines
+    implementation navigation
+    implementation imageLoaders
+    kapt glideCompiler
+    implementation koin
+    implementation moshi
+    kapt moshiCodeGen
+    implementation circleImageView
+    implementation lottie
+    implementation prettyTime
+    implementation hyperlink
+    implementation simpleRatingBar
+    implementation flexBox
+    implementation wheelpicker
+    implementation StickyScrollView
+    implementation cameraX
+    implementation imagePicker
+}
+
+
+static def getDevBaseUrl() {
+    Properties props = new Properties()
+    props.load(new FileInputStream(new File('/home/thirtharaj/AndroidStudioProjects/OVI/secret.properties')))
+    return props['DEV_BASE_URL']
+}
+
+static def getProdBaseUrl() {
+    Properties props = new Properties()
+    props.load(new FileInputStream(new File('/home/thirtharaj/AndroidStudioProjects/OVI/secret.properties')))
+    return props['PROD_BASE_URL']
+}
+

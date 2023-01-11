@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white_1000"
+        android:layout_height="match_parent">
+
+        <org.ovi.widget.WidgetHomeToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:toolbarTitle="Options" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvMenuList"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_menu"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvVersion"
+            android:text="123"
+            android:textColor="@color/light_brown"
+            android:layout_margin="@dimen/margin_20dp"
+            android:fontFamily="@font/opensans_regular"
+            android:textSize="@dimen/ts_15sp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cLayDD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/text_color_login"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/app_name" />
+
+
+        <LinearLayout
+            android:id="@+id/lLayContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:background="@drawable/bg_edit_text_white_brown_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvHint"
+            app:layout_constraintTop_toBottomOf="@+id/tvHint">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/selectedItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_15dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_1000"
+                    android:textSize="@dimen/ts_13sp"
+                    tools:text="@string/app_name" />
+
+
+                <RelativeLayout
+                    android:id="@+id/dropDownLay"
+                    android:layout_width="@dimen/margin_30dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/margin_3dp"
+                    android:background="@drawable/bg_ripple_circle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivDropDown"
+                        android:layout_width="@dimen/margin_10dp"
+                        android:layout_height="@dimen/margin_10dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_fill_down_arrow" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vwBtm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/margin_5dp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

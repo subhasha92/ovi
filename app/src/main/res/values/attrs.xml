@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="OviLabeledEditText">
+        <attr name="android:inputType" />
+        <attr name="passwordToggleEnabled" />
+        <attr name="labelTextColor" format="color" />
+        <attr name="inputTextColor" format="color" />
+        <attr name="readOnlyMode" format="boolean" />
+        <attr name="labelTextSize" format="integer" />
+        <attr name="labelFont" format="integer" />
+        <attr name="labelVisibility" format="boolean" />
+        <attr name="inputTextSize" format="integer" />
+        <attr name="labelText" format="string" />
+        <attr name="inputText" format="string" />
+        <attr name="endIconDrawable" format="reference" />
+        <attr name="android:background" />
+        <attr name="android:fontFamily" />
+        <attr name="android:maxLength" />
+        <attr name="prefixText" format="string" />
+        <attr name="android:hint" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressView">
+        <attr name="progressColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="OviButton">
+        <attr name="bgShape" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="round_rect" value="1" />
+        </attr>
+        <attr name="android:background" />
+        <attr name="android:textColor" />
+        <attr name="android:fontFamily" />
+        <attr name="android:padding" />
+    </declare-styleable>
+
+    <declare-styleable name="OviDropDown">
+        <attr name="dd_title" format="string" />
+        <attr name="dd_hint" format="string" />
+        <attr name="dd_default_txt" format="string" />
+        <attr name="dd_data_type" format="integer" />
+        <attr name="dd_label_color" format="color" />
+        <attr name="android:tint" />
+        <attr name="android:fontFamily" />
+        <attr name="android:textColor" />
+        <attr name="dd_background" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WidgetHomeToolbar">
+        <attr name="toolbarTitle" format="string" />
+        <attr name="showBanner" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="WidgetImageAndText">
+        <attr name="imageSrc" format="reference" />
+        <attr name="eventTitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="OviTitledToolbar">
+        <attr name="title" format="string" />
+        <attr name="hideIcon" format="boolean" />
+        <attr name="backIconEnabled" format="boolean" />
+        <attr name="android:textColor" />
+        <attr name="android:fontFamily" />
+        <attr name="hideTitle" format="boolean" />
+        <attr name="endOptionIcon" format="reference" />
+        <attr name="toolHeight" format="integer" />
+    </declare-styleable>
+
+
+    <attr name="mpm_primaryTextColor" format="color|reference" />
+    <attr name="mpm_secondaryTextColor" format="color|reference" />
+    <attr name="mpm_activeIconColor" format="color|reference" />
+    <attr name="mpm_separatorColor" format="color|reference" />
+    <attr name="mpm_paddingBottom" format="dimension" />
+    <attr name="mpm_paddingStart" format="dimension" />
+    <attr name="mpm_paddingEnd" format="dimension" />
+    <attr name="mpm_paddingTop" format="dimension" />
+    <attr name="materialPopupMenuStyle" format="reference" />
+    <declare-styleable name="MaterialRecyclerViewPopupWindow">
+        <attr name="android:dropDownHorizontalOffset" />
+        <attr name="android:dropDownVerticalOffset" />
+        <attr name="android:backgroundDimEnabled" />
+        <attr name="android:backgroundDimAmount" />
+        <attr name="mpm_paddingBottom" />
+        <attr name="mpm_paddingStart" />
+        <attr name="mpm_paddingEnd" />
+        <attr name="mpm_paddingTop" />
+    </declare-styleable>
+
+    <attr name="scrollingPagerIndicatorStyle" />
+
+    <declare-styleable name="ScrollingPagerIndicator">
+        <attr name="spi_dotColor" format="color" />
+        <attr name="spi_dotSelectedColor" format="color" />
+        <attr name="spi_dotSize" format="dimension" />
+        <attr name="spi_dotSelectedSize" format="dimension" />
+        <attr name="spi_dotMinimumSize" format="dimension" />
+        <attr name="spi_dotSpacing" format="dimension" />
+        <attr name="spi_visibleDotCount" format="integer" />
+        <attr name="spi_visibleDotThreshold" format="integer" />
+        <attr name="spi_looped" format="boolean" />
+        <attr name="spi_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

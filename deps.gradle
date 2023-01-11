@@ -1,0 +1,204 @@
+ext.versions = [
+        core                 : '1.6.0',
+        kotlin_version       : '1.5.31',
+        gradle               : '7.0.3',
+        minSdk               : 23,
+        compileSdk           : 31,
+        appcompat            : '1.1.0',
+        constraint_layout    : '1.1.3',
+        junit_version        : '4.12',
+        junitExt             : '1.1.2',
+        coroutines           : '1.5.0',
+        expresso_version     : '3.2.0',
+        legacy               : '1.0.0',
+        material_version     : '1.2.1',
+        coreKtx              : '1.3.1',
+        nav_version          : '2.3.0',
+        retrofit             : '2.6.2',
+        okhttp               : '4.2.0',
+        gson                 : '2.6.2',
+        rxAdapter            : '2.6.0',
+        loggingInterceptor   : '4.2.0',
+        glide                : "4.11.0",
+        viewmodel            : "2.2.0",
+        livedata             : "2.3.0-alpha07",
+        livedataExt          : "2.2.0",
+        lifeCycleVersion     : "2.4.0-alpha02",
+        rxAndroid            : "2.1.1",
+        rxJava               : "2.2.9",
+        fragmentExtVersion   : '1.2.5',
+        rxContact            : '1.2.0',
+        chunk                : '1.1.0',
+        linkify              : '2.0.5',
+        materialPopup        : '4.0.1',
+        branchIo             : '5.0.3',
+        maps                 : '17.0.0',
+        location             : '17.0.0',
+        places               : '2.4.0',
+        materialIcon         : '0.2.3',
+        libphonenumber       : '8.2.0',
+        crashLogger          : '1.1.0',
+        permissionHelper     : 'test',
+        horzProgress         : '0.2.4',
+        billing_version      : '3.0.2',
+        exoPlayer_version    : '2.11.7',
+        fresco               : '2.4.0',
+        heifConverter        : '1.3',
+        work                 : '2.5.0',
+        koin                 : '3.1.5',
+        moshi                : '1.13.0',
+        retrofitMoshi        : '2.9.0',
+        exoPlayer            : "2.11.7",
+        exoPlayerLeanBack    : "2.10.0",
+        exoMediaSession      : "2.10.0",
+        leanBack             : "1.0.0",
+        camerax_version      : "1.1.0-beta03",
+        firebase_crashalytics: "18.2.13",
+        firebase_analytics   : "21.0.0",
+        firebase_messaging   : "23.0.6"
+
+]
+ext {
+
+    base = [
+            fileTree(dir: "libs", include: ["*.jar"]),
+            "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin_version",
+            "androidx.core:core-ktx:$versions.coreKtx",
+            "androidx.appcompat:appcompat:$versions.appcompat",
+            "androidx.constraintlayout:constraintlayout:$versions.constraint_layout",
+            "androidx.legacy:legacy-support-v4:$versions.legacy",
+            "androidx.core:core-ktx:$versions.core"
+    ]
+    uiGraphics='androidx.compose.ui:ui-graphics:1.0.0-rc01'
+    networking = [
+            "com.squareup.retrofit2:retrofit:$versions.retrofit",
+            "com.squareup.okhttp3:okhttp:$versions.okhttp",
+            "com.squareup.retrofit2:converter-gson:$versions.gson",
+            "com.squareup.retrofit2:adapter-rxjava2:$versions.rxAdapter",
+            "com.squareup.okhttp3:logging-interceptor:$versions.loggingInterceptor",
+    ]
+    liveDataExtension = [
+            "androidx.lifecycle:lifecycle-livedata-ktx:$versions.livedata",
+            "androidx.activity:activity-ktx:1.1.0"
+    ]
+    lifecycleArch = [
+            "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifeCycleVersion",
+            "androidx.lifecycle:lifecycle-runtime:$versions.lifeCycleVersion",
+            "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifeCycleVersion",
+            "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifeCycleVersion",
+            "androidx.lifecycle:lifecycle-extensions:$versions.liveData",
+            "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifeCycleVersion",
+    ]
+    navigation = [
+            "androidx.navigation:navigation-fragment-ktx:$versions.nav_version",
+            "androidx.navigation:navigation-ui-ktx:$versions.nav_version",
+            "androidx.navigation:navigation-fragment:$versions.nav_version",
+            "androidx.navigation:navigation-ui:$versions.nav_version"
+    ]
+    coroutines = [
+            "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines",
+            "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines"
+    ]
+    rx = [
+            "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+            "io.reactivex.rxjava2:rxjava:$versions.rxJava"
+    ]
+    androidTestLibraries = [
+            "androidx.test.ext:junit:$versions.junitExt",
+            "androidx.test.espresso:espresso-core:$versions.expresso_version",
+    ]
+    glideCompiler = ["com.github.bumptech.glide:compiler:$versions.glide"]
+    moshiCodeGen = ["com.squareup.moshi:moshi-kotlin-codegen:$versions.moshi"]
+    imageLoaders = [
+            "com.github.bumptech.glide:glide:$versions.glide"
+    ]
+    googleServices = ["com.google.android.gms:play-services-places:17.0.0",
+                      "com.google.android.gms:play-services-auth:19.0.0"
+    ]
+    koin = [
+            "io.insert-koin:koin-core:$versions.koin",
+            "io.insert-koin:koin-android:$versions.koin",
+    ]
+    moshi = [
+            "com.squareup.moshi:moshi:$versions.moshi",
+            "com.squareup.moshi:moshi-kotlin:$versions.moshi",
+            "com.squareup.retrofit2:converter-moshi:$versions.retrofitMoshi",
+            "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.3.0"
+    ]
+    fresco = ["com.facebook.fresco:fresco:$versions.fresco"]
+    heifConverter = ["com.github.lincollincol:HEIF-converter:$versions.heifConverter"]
+    work = ["androidx.work:work-runtime-ktx:$versions.work"]
+    rxContact = ["com.github.mirrajabi:rx-contacts2:$versions.rxContact"]
+    chunk = ["com.readystatesoftware.chuck:library:$versions.chunk"]
+    hyperlink = ["com.klinkerapps:link_builder:$versions.linkify"]
+    materialPopup = ["com.github.zawadz88.materialpopupmenu:material-popup-menu:$versions.materialPopup"]
+    branchIo = ["io.branch.sdk.android:library:$versions.branchIo"]
+    testLibraries = ["junit:junit:$versions.junit_version"]
+    maps = ["com.google.android.gms:play-services-maps:$versions.maps"]
+    location = [
+            "com.google.android.gms:play-services-base:$versions.location",
+            "com.google.android.gms:play-services-location:$versions.location"
+    ]
+    places = ["com.google.android.libraries.places:places:$versions.places"]
+    materialIcon = ["com.github.ivbaranov:materiallettericon:$versions.materialIcon"]
+    libPhone = ["com.googlecode.libphonenumber:libphonenumber:$versions.libphonenumber"]
+    crashLogger = ["com.balsikandar.android:crashreporter:$versions.crashLogger"]
+    horizontalProgress = ["com.daasuu:animateHorizontalProgressBar:$versions.horzProgress"]
+    permissionHelper = ["com.github.Promact:dynamic-permission-handling-android:$versions.permissionHelper"]
+    keyboardUtil = ["net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC2"]
+    ktor = ["io.ktor:ktor-client-android:1.2.5"]
+    exoPlayer = ["com.google.android.exoplayer:exoplayer:$versions.exoPlayer_version"]
+    inappPurchase = ["com.android.billingclient:billing:$versions.billing_version",
+                     "com.android.billingclient:billing-ktx:$versions.billing_version"]
+
+    firebaseAnalytics = ["com.google.firebase:firebase-analytics-ktx:$versions.firebase_analytics"]
+    firebaseCrashalytics = ["com.google.firebase:firebase-crashlytics-ktx:$versions.firebase_crashalytics"]
+    firebaseMessaging = ["com.google.firebase:firebase-messaging-ktx:$versions.firebase_messaging"]
+
+    leanBackExoPlayer = [
+            "com.google.android.exoplayer:exoplayer:$versions.exoPlayer",
+            "com.google.android.exoplayer:extension-leanback:$versions.exoPlayerLeanBack",
+            "com.google.android.exoplayer:extension-mediasession:$versions.exoMediaSession"
+    ]
+    leanBack = [
+            "androidx.leanback:leanback:$versions.leanBack"
+    ]
+    material = "com.google.android.material:material:1.5.0"
+    permissionDispatcher = "com.github.permissions-dispatcher:permissionsdispatcher:4.8.0"
+    permissionDispatcherKapt = "com.github.permissions-dispatcher:permissionsdispatcher-processor:4.8.0"
+    circleImageView = "de.hdodenhof:circleimageview:3.1.0"
+    lottie = "com.airbnb.android:lottie:3.0.7"
+    prettyTime = "org.ocpsoft.prettytime:prettytime:4.0.4.Final"
+    mpAndroidChart = "com.github.PhilJay:MPAndroidChart:v3.1.0"
+    simpleRatingBar = "com.github.ome450901:SimpleRatingBar:1.5.1"
+    flexBox = "com.google.android.flexbox:flexbox:3.0.0"
+    wheelpicker = "sh.tyy:wheelpicker:0.4.0"
+    StickyScrollView = "com.github.amarjain07:StickyScrollView:1.0.3"
+    mlKit = "com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0"
+    cameraX = [
+            "androidx.camera:camera-camera2:$versions.camerax_version",
+            "androidx.camera:camera-lifecycle:$versions.camerax_version",
+            "androidx.camera:camera-view:$versions.camerax_version"
+    ]
+    zendesk = [
+            "group: 'com.zendesk', name: 'support', version: '5.0.8'",
+            "group: 'com.zendesk', name: 'messaging', version: '5.2.3'",
+            "group: 'com.zendesk', name: 'answerbot', version: '3.0.0'"
+    ]
+    appCompat = [
+            "com.android.support:appcompat-v7:28.0.0",
+            "com.android.support.constraint:constraint-layout:2.0.4",
+            "com.android.support:support-v4:28.0.0",
+            "com.android.support:design:28.0.0",
+            "android.arch.navigation:navigation-fragment-ktx:1.0.0",
+            "android.arch.navigation:navigation-ui-ktx:1.0.0"
+    ]
+
+    imagePicker = [
+            "com.github.dhaval2404:imagepicker:2.1",
+            "androidx.activity:activity-ktx:1.2.3",
+            "androidx.fragment:fragment-ktx:1.3.3"
+    ]
+
+
+}

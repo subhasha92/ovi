@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="_device_class_phone" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1839f24d-24c9-4a9a-97e7-6250cf92c742" name="Changes" comment="Commit-subhash" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/thirtharaj/.android/avd/Pixel_5_API_29.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OVI" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OVI" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="navigationResourceFile" />
+        <option value="Kotlin Object" />
+        <option value="valueResourceFile" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Interface" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/release_key.jks" />
+    <option name="KEY_ALIAS" value="oviApp123" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="AND-STG-APP" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29XuoFnOoqf5EnkVJLwuuhuEX3o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/app/build/intermediates/apk/prod/release/ovi.prodRelease-1.0.0.apk" />
+    <property name="BundleExportedModule" value="OVI.app" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.BuildVariants" value="prodRelease" />
+    <property name="ResourceManagerPrefKey.ResourceType" value="NAVIGATION" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="android-custom-view/home/thirtharaj/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.3.1/45a346a05e7ff27a01c59452379c5939cbb53c03/appcompat-1.3.1-sources.jar!/androidx/appcompat/widget/AppCompatAutoCompleteTextView.java_SELECTED" value="AppCompatAutoCompleteTextView" />
+    <property name="android-custom-view/home/thirtharaj/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.5.0/8d3b87c7463f55053836b805e014cb238f64757a/material-1.5.0-sources.jar!/com/google/android/material/textfield/TextInputLayout.java_SELECTED" value="TextInputLayout" />
+    <property name="android-custom-view/home/thirtharaj/Android/Sdk/sources/android-31/android/view/View.java_SELECTED" value="View" />
+    <property name="android-custom-view/home/thirtharaj/Android/Sdk/sources/android-31/android/widget/AutoCompleteTextView.java_SELECTED" value="AutoCompleteTextView" />
+    <property name="android-custom-view/home/thirtharaj/Android/Sdk/sources/android-31/android/widget/CompoundButton.java_SELECTED" value="CompoundButton" />
+    <property name="android-custom-view/home/thirtharaj/Android/Sdk/sources/android-31/android/widget/TextView.java_SELECTED" value="TextView" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/CustomSnackbar.kt_SELECTED" value="CustomSnackbar" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/OviButton.kt_SELECTED" value="OviButton" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/OviDropDown.kt_SELECTED" value="OviDropDown" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/OviEventToolbar.kt_SELECTED" value="OviEventToolbar" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/OviLabeledEditText.kt_SELECTED" value="OviLabeledEditText" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/OviOtpBoxEdittext.kt_SELECTED" value="OviOtpBoxEdittext" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/OviSwitchEdit.kt_SELECTED" value="OviSwitchEdit" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/OviTitledToolbar.kt_SELECTED" value="OviTitledToolbar" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/OviViewSwitcher.kt_SELECTED" value="OviViewSwitcher" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/ProgressView.kt_SELECTED" value="ProgressView" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/WidgetHomeToolbar.kt_SELECTED" value="WidgetHomeToolbar" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/com/ovi/widget/WidgetLabelledText.kt_SELECTED" value="WidgetLabelledText" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/CustomSnackbar.kt_SELECTED" value="CustomSnackbar" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviAutocomplete.kt_OviAutocomplete_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviAutocomplete.kt_SELECTED" value="OviAutocomplete" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviButton.kt_OviButton_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviButton.kt_SELECTED" value="OviButton" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviDropDown.kt_OviDropDown_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviDropDown.kt_SELECTED" value="OviDropDown" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviEventToolbar.kt_SELECTED" value="OviEventToolbar" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviLabeledEditText.kt_OviLabeledEditText_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviLabeledEditText.kt_SELECTED" value="OviLabeledEditText" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviOtpBoxEdittext.kt_SELECTED" value="OviOtpBoxEdittext" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviSwitchEdit.kt_SELECTED" value="OviSwitchEdit" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OviTitledToolbar.kt_SELECTED" value="OviTitledToolbar" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/OvieAutocomplete.kt_SELECTED" value="OvieAutocomplete" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/ProgressView.kt_SELECTED" value="ProgressView" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/WidgetHomeToolbar.kt_SELECTED" value="WidgetHomeToolbar" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/WidgetImageAndText.kt_SELECTED" value="WidgetImageAndText" />
+    <property name="android-custom-view/home/thirtharaj/AndroidStudioProjects/OVI/app/src/main/java/org/ovi/widget/WidgetLabelledText.kt_SELECTED" value="WidgetLabelledText" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JSON&#10;Properties" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Build Variants" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="BUILD_VARIANTS_TAB" value="Flavors" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+    <option name="LAST_EDITED_FLAVOR_OR_DIMENSION" value="dev" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.1207729825">
+      <recent name="com.ovi.feature.register.view.activity" />
+    </key>
+    <key name="android.template.-480482070">
+      <recent name="com.ovi.feature.notification.view" />
+      <recent name="com.ovi.feature.profile.view.activity" />
+      <recent name="com.ovi.feature.events.view.activity" />
+    </key>
+    <key name="android.template.1376990538">
+      <recent name="com.ovi.feature.home.view.activity" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="org.ovi.base" />
+      <recent name="org.ovi.util" />
+      <recent name="com.ovi.widget" />
+      <recent name="com.ovi.data.pref" />
+      <recent name="com.ovi.base" />
+    </key>
+    <key name="android.template.186571569">
+      <recent name="com.ovi.feature.splash" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ovi.util" />
+    </key>
+    <key name="android.template.-1934390392">
+      <recent name="com.ovi.feature.forgetpassword.view" />
+      <recent name="com.ovi.feature.auth.view" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/org/ovi/feature/survey/model" />
+      <recent name="$PROJECT_DIR$/app/src/main/res" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/font" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/ovi/feature/auth/model" />
+      <recent name="$PROJECT_DIR$/app/src/main/res" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.ovi.feature.profile.view.adapter" />
+      <recent name="com.ovi.feature.profile.view.activity" />
+      <recent name="com.ovi.feature.profile.view.fragment" />
+      <recent name="com.ovi.feature.register.view.activity" />
+      <recent name="com.ovi.common" />
+    </key>
+    <key name="android.template.913831788">
+      <recent name="com.ovi.feature.auth.view" />
+    </key>
+    <key name="android.template.1131039425">
+      <recent name="com.ovi.feature.privacy" />
+    </key>
+    <key name="android.template.2064816968">
+      <recent name="com.ovi.feature.register.view.activity" />
+    </key>
+    <key name="android.template.470861006">
+      <recent name="org.ovi.feature.survey.view.activity" />
+    </key>
+    <key name="android.template.2093494016">
+      <recent name="com.ovi.feature.register.view" />
+      <recent name="com.ovi.feature.forgetpassword.view" />
+    </key>
+    <key name="android.template.1170984758">
+      <recent name="org.ovi.feature.handlelink" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="URL https://www.onevoiceimpact.app/memberuserDesktop/login/resetpassword?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAxLCJlbWFpbHMiOlsic2hhdW5AeW9wbWFpbC5jb20iXSwibmFtZSI6IlNoYXVuIiwicm9sZSI6InN1cHBvcnRpdmVfYWR1bHQiLCJwaG9uZSI6IisxNDA4ODAwNjgwNiIsImFkZHJlc3MiOnsiY291bnR5IjoiYWdlbmN5J3MiLCJ6aXBjb2RlIjoiMzM0MTAiLCJzdHJlZXQiOiJPYWsgc3RyZWV0ICIsImNpdHkiOiJQYWxtIEJlYWNoIEdhcmRlbnMiLCJzdGF0ZSI6IkZMIn0sInBhc3N3b3JkIjoiSndWWGFnTmlaSDBSRVJ2VUpZN0h6UT09JFBIbFo2RFZmR2N0c2VnSStSZ21lWHFudkk4eE1kV2RkRlRzMllvbjZIUjN4Z1RRaW1DVzNVR1RHcE9odGwrUDZicnF1MHNIYWpKTlFBQ1REdy9ULzFBPT0iLCJiaXJ0aGRheSI6IjIwMDYtMDgtMjYiLCJpbWFnZV91cmwiOm51bGwsImdlbmRlciI6Ik5vbiBiaW5hcnkiLCJvdGhlcl9nZW5kZXIiOm51bGwsInN0YXR1cyI6ImFjdGl2ZSIsImpvaW5lZF9vbiI6IjIwMjItMDgtMjMiLCJjb3VudHkiOiJhZ2VuY3kncyIsIm90cCI6bnVsbCwib3RwX3ZhbGlkX3VwdG8iOm51bGwsImNvZGUiOm51bGwsImRlbGV0ZWRBdCI6bnVsbCwibWVtYmVyX3VzZXIiOnsiaWQiOjMwNywieW91dGhfY291bmNpbF9uYW1lIjoiU2hhdW4gQ291bmNpbCIsInNoaXJ0X3NpemUiOiI0WEwiLCJyYWNlIjoiQXNpYW4iLCJldGhuaWNpdHkiOiJBc2lhbiBhbG9uZSwgTm9uLUhpc3BhbmljIiwidXNlcl9pZCI6NDAxLCJhZ2VuY3lfaWQiOjI1LCJjcmVhdGVkQXQiOiIyMDIyLTA4LTIzVDA1OjA4OjIwLjk4MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTEzVDEwOjI0OjU0LjcwMFoiLCJkZWxldGVkQXQiOm51bGx9LCJhZG1pbiI6bnVsbCwiaWF0IjoxNjYzMTY4MDQ3LCJleHAiOjE2NjMxNjg2NDd9.EHOdR44_eaxgEGiVIW_GV_Ih4oQ7m8_FE-g3PREJo78" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="OVI.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="launch_deep_link" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+        <option name="PROFILING_MODE" value="NOT_SET" />
+      </Profilers>
+      <option name="DEEP_LINK" value="https://www.onevoiceimpact.app/memberuserDesktop/login/resetpassword?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAxLCJlbWFpbHMiOlsic2hhdW5AeW9wbWFpbC5jb20iXSwibmFtZSI6IlNoYXVuIiwicm9sZSI6InN1cHBvcnRpdmVfYWR1bHQiLCJwaG9uZSI6IisxNDA4ODAwNjgwNiIsImFkZHJlc3MiOnsiY291bnR5IjoiYWdlbmN5J3MiLCJ6aXBjb2RlIjoiMzM0MTAiLCJzdHJlZXQiOiJPYWsgc3RyZWV0ICIsImNpdHkiOiJQYWxtIEJlYWNoIEdhcmRlbnMiLCJzdGF0ZSI6IkZMIn0sInBhc3N3b3JkIjoiSndWWGFnTmlaSDBSRVJ2VUpZN0h6UT09JFBIbFo2RFZmR2N0c2VnSStSZ21lWHFudkk4eE1kV2RkRlRzMllvbjZIUjN4Z1RRaW1DVzNVR1RHcE9odGwrUDZicnF1MHNIYWpKTlFBQ1REdy9ULzFBPT0iLCJiaXJ0aGRheSI6IjIwMDYtMDgtMjYiLCJpbWFnZV91cmwiOm51bGwsImdlbmRlciI6Ik5vbiBiaW5hcnkiLCJvdGhlcl9nZW5kZXIiOm51bGwsInN0YXR1cyI6ImFjdGl2ZSIsImpvaW5lZF9vbiI6IjIwMjItMDgtMjMiLCJjb3VudHkiOiJhZ2VuY3kncyIsIm90cCI6bnVsbCwib3RwX3ZhbGlkX3VwdG8iOm51bGwsImNvZGUiOm51bGwsImRlbGV0ZWRBdCI6bnVsbCwibWVtYmVyX3VzZXIiOnsiaWQiOjMwNywieW91dGhfY291bmNpbF9uYW1lIjoiU2hhdW4gQ291bmNpbCIsInNoaXJ0X3NpemUiOiI0WEwiLCJyYWNlIjoiQXNpYW4iLCJldGhuaWNpdHkiOiJBc2lhbiBhbG9uZSwgTm9uLUhpc3BhbmljIiwidXNlcl9pZCI6NDAxLCJhZ2VuY3lfaWQiOjI1LCJjcmVhdGVkQXQiOiIyMDIyLTA4LTIzVDA1OjA4OjIwLjk4MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTEzVDEwOjI0OjU0LjcwMFoiLCJkZWxldGVkQXQiOm51bGx9LCJhZG1pbiI6bnVsbCwiaWF0IjoxNjYzMTY4MDQ3LCJleHAiOjE2NjMxNjg2NDd9.EHOdR44_eaxgEGiVIW_GV_Ih4oQ7m8_FE-g3PREJo78" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="URL https://www.onevoiceimpact.app/memberuserDesktop/login/resetpassword?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAxLCJlbWFpbHMiOlsic2hhdW5AeW9wbWFpbC5jb20iXSwibmFtZSI6IlNoYXVuIiwicm9sZSI6InN1cHBvcnRpdmVfYWR1bHQiLCJwaG9uZSI6IisxNDA4ODAwNjgwNiIsImFkZHJlc3MiOnsiY291bnR5IjoiYWdlbmN5J3MiLCJ6aXBjb2RlIjoiMzM0MTAiLCJzdHJlZXQiOiJPYWsgc3RyZWV0ICIsImNpdHkiOiJQYWxtIEJlYWNoIEdhcmRlbnMiLCJzdGF0ZSI6IkZMIn0sInBhc3N3b3JkIjoiSndWWGFnTmlaSDBSRVJ2VUpZN0h6UT09JFBIbFo2RFZmR2N0c2VnSStSZ21lWHFudkk4eE1kV2RkRlRzMllvbjZIUjN4Z1RRaW1DVzNVR1RHcE9odGwrUDZicnF1MHNIYWpKTlFBQ1REdy9ULzFBPT0iLCJiaXJ0aGRheSI6IjIwMDYtMDgtMjYiLCJpbWFnZV91cmwiOm51bGwsImdlbmRlciI6Ik5vbiBiaW5hcnkiLCJvdGhlcl9nZW5kZXIiOm51bGwsInN0YXR1cyI6ImFjdGl2ZSIsImpvaW5lZF9vbiI6IjIwMjItMDgtMjMiLCJjb3VudHkiOiJhZ2VuY3kncyIsIm90cCI6bnVsbCwib3RwX3ZhbGlkX3VwdG8iOm51bGwsImNvZGUiOm51bGwsImRlbGV0ZWRBdCI6bnVsbCwibWVtYmVyX3VzZXIiOnsiaWQiOjMwNywieW91dGhfY291bmNpbF9uYW1lIjoiU2hhdW4gQ291bmNpbCIsInNoaXJ0X3NpemUiOiI0WEwiLCJyYWNlIjoiQXNpYW4iLCJldGhuaWNpdHkiOiJBc2lhbiBhbG9uZSwgTm9uLUhpc3BhbmljIiwidXNlcl9pZCI6NDAxLCJhZ2VuY3lfaWQiOjI1LCJjcmVhdGVkQXQiOiIyMDIyLTA4LTIzVDA1OjA4OjIwLjk4MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTEzVDEwOjI0OjU0LjcwMFoiLCJkZWxldGVkQXQiOm51bGx9LCJhZG1pbiI6bnVsbCwiaWF0IjoxNjYzNTcwNTQ5LCJleHAiOjE2NjM1NzExNDl9.AReQAaQu1SP0RmIYA_0VkcjZ-LtzEIBr0Rp1GetJDng" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="OVI.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="launch_deep_link" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+        <option name="PROFILING_MODE" value="NOT_SET" />
+      </Profilers>
+      <option name="DEEP_LINK" value="https://www.onevoiceimpact.app/memberuserDesktop/login/resetpassword?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAxLCJlbWFpbHMiOlsic2hhdW5AeW9wbWFpbC5jb20iXSwibmFtZSI6IlNoYXVuIiwicm9sZSI6InN1cHBvcnRpdmVfYWR1bHQiLCJwaG9uZSI6IisxNDA4ODAwNjgwNiIsImFkZHJlc3MiOnsiY291bnR5IjoiYWdlbmN5J3MiLCJ6aXBjb2RlIjoiMzM0MTAiLCJzdHJlZXQiOiJPYWsgc3RyZWV0ICIsImNpdHkiOiJQYWxtIEJlYWNoIEdhcmRlbnMiLCJzdGF0ZSI6IkZMIn0sInBhc3N3b3JkIjoiSndWWGFnTmlaSDBSRVJ2VUpZN0h6UT09JFBIbFo2RFZmR2N0c2VnSStSZ21lWHFudkk4eE1kV2RkRlRzMllvbjZIUjN4Z1RRaW1DVzNVR1RHcE9odGwrUDZicnF1MHNIYWpKTlFBQ1REdy9ULzFBPT0iLCJiaXJ0aGRheSI6IjIwMDYtMDgtMjYiLCJpbWFnZV91cmwiOm51bGwsImdlbmRlciI6Ik5vbiBiaW5hcnkiLCJvdGhlcl9nZW5kZXIiOm51bGwsInN0YXR1cyI6ImFjdGl2ZSIsImpvaW5lZF9vbiI6IjIwMjItMDgtMjMiLCJjb3VudHkiOiJhZ2VuY3kncyIsIm90cCI6bnVsbCwib3RwX3ZhbGlkX3VwdG8iOm51bGwsImNvZGUiOm51bGwsImRlbGV0ZWRBdCI6bnVsbCwibWVtYmVyX3VzZXIiOnsiaWQiOjMwNywieW91dGhfY291bmNpbF9uYW1lIjoiU2hhdW4gQ291bmNpbCIsInNoaXJ0X3NpemUiOiI0WEwiLCJyYWNlIjoiQXNpYW4iLCJldGhuaWNpdHkiOiJBc2lhbiBhbG9uZSwgTm9uLUhpc3BhbmljIiwidXNlcl9pZCI6NDAxLCJhZ2VuY3lfaWQiOjI1LCJjcmVhdGVkQXQiOiIyMDIyLTA4LTIzVDA1OjA4OjIwLjk4MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTEzVDEwOjI0OjU0LjcwMFoiLCJkZWxldGVkQXQiOm51bGx9LCJhZG1pbiI6bnVsbCwiaWF0IjoxNjYzNTcwNTQ5LCJleHAiOjE2NjM1NzExNDl9.AReQAaQu1SP0RmIYA_0VkcjZ-LtzEIBr0Rp1GetJDng" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="URL https://www.onevoiceimpact.app/memberuserDesktop/profile/eventview?value=192&amp;type=cancel" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="OVI.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="launch_deep_link" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+        <option name="PROFILING_MODE" value="NOT_SET" />
+      </Profilers>
+      <option name="DEEP_LINK" value="https://www.onevoiceimpact.app/memberuserDesktop/profile/eventview?value=192&amp;type=cancel" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="OVI.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+        <option name="PROFILING_MODE" value="NOT_SET" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OVI.app.androidTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OVI.app.androidTest" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1839f24d-24c9-4a9a-97e7-6250cf92c742" name="Changes" comment="" />
+      <created>1653271927973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653271927973</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Registration screen added">
+      <created>1653400550847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653400550847</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Registration screen added">
+      <created>1653401291385</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653401291385</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Registration few more screen added">
+      <created>1653488498289</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653488498289</updated>
+    </task>
+    <task id="LOCAL-00005" summary="linking added add addOn Question also added">
+      <created>1653574480683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653574480683</updated>
+    </task>
+    <task id="LOCAL-00006" summary="my profile section done">
+      <created>1653810780355</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653810780355</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Events section done">
+      <created>1653919045766</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653919045766</updated>
+    </task>
+    <task id="LOCAL-00008" summary="login api integrated">
+      <created>1654090766697</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654090766697</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Register api integrated">
+      <created>1654180916358</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654180916358</updated>
+    </task>
+    <task id="LOCAL-00010" summary="home and events api integrated">
+      <created>1654771557707</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654771557707</updated>
+    </task>
+    <task id="LOCAL-00011" summary="edit profile crash fixed api integrated">
+      <created>1654773912933</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654773912933</updated>
+    </task>
+    <task id="LOCAL-00012" summary="edit profile crash fixed api integrated">
+      <created>1654779041698</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1654779041698</updated>
+    </task>
+    <task id="LOCAL-00013" summary="event tracker and change password api integrated">
+      <created>1654867791750</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1654867791750</updated>
+    </task>
+    <task id="LOCAL-00014" summary="crashlytics and event api changed">
+      <created>1655214475674</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1655214475674</updated>
+    </task>
+    <task id="LOCAL-00015" summary="report api integrated">
+      <created>1655294413078</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1655294413078</updated>
+    </task>
+    <task id="LOCAL-00016" summary="default screen changed integrated">
+      <created>1655462791806</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1655462791806</updated>
+    </task>
+    <task id="LOCAL-00017" summary="filter added integrated">
+      <created>1655465882442</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1655465882442</updated>
+    </task>
+    <task id="LOCAL-00018" summary="package name changed">
+      <created>1655469887341</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1655469887341</updated>
+    </task>
+    <task id="LOCAL-00019" summary="package name changed">
+      <created>1655474611000</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1655474611000</updated>
+    </task>
+    <task id="LOCAL-00020" summary="package name changed">
+      <created>1655704252599</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1655704252599</updated>
+    </task>
+    <task id="LOCAL-00021" summary="email and address field splitted">
+      <created>1655890045801</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1655890045801</updated>
+    </task>
+    <task id="LOCAL-00022" summary="bug fixed and image upload added">
+      <created>1655991655214</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1655991655215</updated>
+    </task>
+    <task id="LOCAL-00023" summary="bug fixed and image upload added">
+      <created>1656068689459</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1656068689459</updated>
+    </task>
+    <task id="LOCAL-00024" summary="image upload fixed">
+      <created>1656316251695</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1656316251695</updated>
+    </task>
+    <task id="LOCAL-00025" summary="bug fixed on get educations details">
+      <created>1656511127894</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1656511127894</updated>
+    </task>
+    <task id="LOCAL-00026" summary="autocomplete zipcode done">
+      <created>1656934075401</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1656934075401</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Report visibility changed">
+      <created>1656942458024</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1656942458024</updated>
+    </task>
+    <task id="LOCAL-00028" summary="few bugs fixed">
+      <created>1657284148686</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1657284148686</updated>
+    </task>
+    <task id="LOCAL-00029" summary="delete account implemented">
+      <created>1658143794122</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1658143794122</updated>
+    </task>
+    <task id="LOCAL-00030" summary="excel bugs fixed date issue resolved">
+      <created>1660032662252</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1660032662252</updated>
+    </task>
+    <task id="LOCAL-00031" summary="other specify added editText">
+      <created>1660816787566</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1660816787566</updated>
+    </task>
+    <task id="LOCAL-00032" summary="other specify added editText">
+      <created>1660828759659</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1660828759659</updated>
+    </task>
+    <task id="LOCAL-00033" summary="edit text issue fixed">
+      <created>1660907123496</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1660907123496</updated>
+    </task>
+    <task id="LOCAL-00034" summary="edit text issue fixed">
+      <created>1661156165889</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1661156165889</updated>
+    </task>
+    <task id="LOCAL-00035" summary="edit text issue fixed">
+      <created>1661156200601</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1661156200601</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Survey part completed">
+      <created>1661434322322</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1661434322322</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added pagination in notification">
+      <created>1661756173157</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1661756173157</updated>
+    </task>
+    <task id="LOCAL-00038" summary="onboarding question changed">
+      <created>1662454440517</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1662454440517</updated>
+    </task>
+    <task id="LOCAL-00039" summary="App linking implementation">
+      <created>1662471367441</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1662471367442</updated>
+    </task>
+    <task id="LOCAL-00040" summary="App linking event details implementation">
+      <created>1663167928207</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1663167928207</updated>
+    </task>
+    <task id="LOCAL-00041" summary="final build phase 1">
+      <created>1663762909895</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1663762909895</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Groups field changed as editable">
+      <created>1664788883187</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1664788883187</updated>
+    </task>
+    <task id="LOCAL-00043" summary="ZipCode position moved above to street name">
+      <created>1666878393865</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1666878393865</updated>
+    </task>
+    <task id="LOCAL-00044" summary="ZipCode position moved above to street name">
+      <created>1666878507932</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1666878507932</updated>
+    </task>
+    <task id="LOCAL-00045" summary="ZipCode position moved above to street name">
+      <created>1666878674587</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1666878674587</updated>
+    </task>
+    <task id="LOCAL-00046" summary="ZipCode position moved above to street name">
+      <created>1666879175168</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1666879175168</updated>
+    </task>
+    <task id="LOCAL-00047" summary="New terms &amp; condition updated.">
+      <created>1667379986659</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1667379986659</updated>
+    </task>
+    <task id="LOCAL-00048" summary="zipcode validation added at all level">
+      <created>1670248844437</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1670248844437</updated>
+    </task>
+    <task id="LOCAL-00049" summary="agency county issue fixed, DOB Skip removed and forget password issue fixed.">
+      <created>1671111602137</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1671111602137</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Commit-subhash">
+      <created>1671623316710</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1671623316711</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="AND-STG-APP" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="in review screen bug fixed" />
+    <MESSAGE value="bug fixed and image upload added" />
+    <MESSAGE value="event refresh added" />
+    <MESSAGE value="image upload fixed" />
+    <MESSAGE value="bug fixed on get educations details" />
+    <MESSAGE value="autocomplete zipcode done" />
+    <MESSAGE value="Report visibility changed" />
+    <MESSAGE value="few bugs fixed" />
+    <MESSAGE value="delete account implemented" />
+    <MESSAGE value="excel bugs fixed" />
+    <MESSAGE value="excel bugs fixed date issue resolved" />
+    <MESSAGE value="other specify added editText" />
+    <MESSAGE value="edit text issue fixed" />
+    <MESSAGE value="Survey part completed" />
+    <MESSAGE value="added pagination in notification" />
+    <MESSAGE value="onboarding question changed" />
+    <MESSAGE value="App linking implementation" />
+    <MESSAGE value="App linking event details implementation" />
+    <MESSAGE value="final build phase 1" />
+    <MESSAGE value="Groups field changed as editable" />
+    <MESSAGE value="ZipCode position moved above to street name" />
+    <MESSAGE value="New terms &amp; condition updated." />
+    <MESSAGE value="zipcode validation added at all level" />
+    <MESSAGE value="agency county issue fixed, DOB Skip removed and forget password issue fixed." />
+    <MESSAGE value="Commit-subhash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit-subhash" />
+  </component>
+</project>

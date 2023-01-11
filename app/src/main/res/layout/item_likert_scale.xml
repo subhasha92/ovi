@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="org.ovi.data.local.SelectionModelWithId" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/vwLineTop"
+            android:layout_width="6dp"
+            android:layout_height="0dp"
+            android:background="@color/grey7"
+            android:minHeight="@dimen/margin_30dp"
+            app:layout_constraintBottom_toTopOf="@id/rbCheck"
+            app:layout_constraintEnd_toEndOf="@id/rbCheck"
+            app:layout_constraintStart_toStartOf="@id/rbCheck"
+            app:layout_constraintTop_toTopOf="@id/tvRightTitle" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLeftTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="end"
+            android:paddingTop="@dimen/margin_20dp"
+            android:paddingBottom="@dimen/margin_20dp"
+            android:text="@{model.content}"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/ts_16sp"
+            app:layout_constraintBottom_toBottomOf="@id/rbCheck"
+            app:layout_constraintEnd_toStartOf="@id/rbCheck"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rbCheck" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbCheck"
+            android:layout_width="@dimen/margin_30dp"
+            android:layout_height="@dimen/margin_30dp"
+            android:background="@drawable/radio_button_check_selector"
+            android:button="@null"
+            android:checked="@{model.selected}"
+            android:clickable="false"
+            android:text="@null"
+            app:layout_constraintBottom_toTopOf="@id/vwLineBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwLineTop" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRightTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="start"
+            android:paddingTop="@dimen/margin_20dp"
+            android:paddingBottom="@dimen/margin_20dp"
+            android:text="@{model.content}"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/ts_16sp"
+            app:layout_constraintBottom_toBottomOf="@id/rbCheck"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rbCheck"
+            app:layout_constraintTop_toTopOf="@id/rbCheck" />
+
+        <View
+            android:id="@+id/vwLineBottom"
+            android:layout_width="6dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            android:background="@color/grey7"
+            android:minHeight="@dimen/margin_30dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvLeftTitle"
+            app:layout_constraintEnd_toEndOf="@id/rbCheck"
+            app:layout_constraintStart_toStartOf="@id/rbCheck"
+            app:layout_constraintTop_toBottomOf="@id/rbCheck"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

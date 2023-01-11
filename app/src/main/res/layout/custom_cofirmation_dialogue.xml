@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/login_bg"
+        app:cardCornerRadius="@dimen/size_4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/guideline_15dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center"
+                android:text="@string/confirm_accepting_the_invite"
+                android:textColor="@color/text_color_dark_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:textSize="@dimen/ts_17sp"
+                app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:text="@string/please_confirm_whether_you_want_to_accept_invite_for_event_name"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/ts_14sp"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+
+            <View
+                android:id="@+id/viewLineVer"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_14dp"
+                android:background="@color/line_color_light"
+                app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+            <View
+                android:id="@+id/viewLineHorz"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@color/line_color_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewLineVer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_11dp"
+                android:paddingBottom="@dimen/margin_11dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center"
+                android:text="@string/no"
+                android:textColor="@color/grey_checkbox"
+                android:textSize="@dimen/ts_18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/viewLineHorz"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewLineVer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_11dp"
+                android:paddingBottom="@dimen/margin_11dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center"
+                android:text="@string/yes"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/ts_18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/viewLineHorz"
+                app:layout_constraintTop_toBottomOf="@id/viewLineVer" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

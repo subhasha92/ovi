@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/guideline_20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            app:cardCornerRadius="@dimen/size_2dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toTopOf="@+id/guideline_top">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImageUser"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/temp_img" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_12dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Annie Hall"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_16sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvDate"
+            app:layout_constraintStart_toEndOf="@id/cardView"
+            app:layout_constraintTop_toTopOf="@id/cardView" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_12dp"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Speaking of which, Peter really wants you to come in on Friday to chat about…"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_12sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toEndOf="@id/cardView"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/size_8dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Yesterday"
+            android:textColor="@color/grey5"
+            android:textSize="@dimen/ts_12sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintTop_toTopOf="@id/cardView" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:background="@color/grey6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/cardView"
+            app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

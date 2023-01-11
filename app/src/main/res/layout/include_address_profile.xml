@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/guideline_20dp" />
+
+        <LinearLayout
+            android:id="@+id/lLayTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toTopOf="@+id/guideline_top">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/_2_address"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/ts_18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_2dp"
+                android:layout_weight="1"
+                android:clickable="false" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintTop_toTopOf="@+id/guideline_top"
+                app:srcCompat="@drawable/ic_arrow_down" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lLayDrop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/lLayTop">
+
+            <org.ovi.widget.OviSwitchEdit
+                android:id="@+id/stZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                app:inputText="lorem ipsum"
+                app:labelText="@string/zipcode" />
+
+            <org.ovi.widget.OviSwitchEdit
+                android:id="@+id/stBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputText="lorem ipsum"
+                app:labelText="@string/building_no_street" />
+
+            <org.ovi.widget.OviSwitchEdit
+                android:id="@+id/stArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputText="lorem ipsum"
+                app:labelText="@string/area_city" />
+
+            <org.ovi.widget.OviSwitchEdit
+                android:id="@+id/stState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputText="lorem ipsum"
+                app:labelText="@string/state" />
+
+            <org.ovi.widget.OviSwitchEdit
+                android:id="@+id/stCounty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputText="lorem ipsum"
+                app:labelText="@string/country" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vwBtm"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_14dp"
+            android:background="@color/line_color_light"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/lLayTop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

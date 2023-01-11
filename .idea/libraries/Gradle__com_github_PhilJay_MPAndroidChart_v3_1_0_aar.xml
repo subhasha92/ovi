@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.PhilJay:MPAndroidChart:v3.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/57d11e15b377b61d6ac8f3c635a4bcc5/transformed/jetified-MPAndroidChart-v3.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7749e2d899f7e582a919fdbd2d55fe47/transformed/jetified-MPAndroidChart-v3.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2bbb324e84971bc6584c4599111a93c3/transformed/jetified-MPAndroidChart-v3.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/72a937351471eab12d6aafca883e2945/transformed/jetified-MPAndroidChart-v3.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3a1b72b1077b7d81a3635b9858ef2d17/transformed/jetified-MPAndroidChart-v3.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3a1b72b1077b7d81a3635b9858ef2d17/transformed/jetified-MPAndroidChart-v3.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3a1b72b1077b7d81a3635b9858ef2d17/transformed/jetified-MPAndroidChart-v3.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.1.0/2cb6d9556dd436cc6af2434d861903323fab2e3c/MPAndroidChart-v3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.1.0/45d3ce505f744a595313d5eb84efd3ca3c8d2d04/MPAndroidChart-v3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

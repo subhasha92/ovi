@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:id="@+id/lLayQuest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/are_you_employed_either_part" />
+
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/what_is_your_highest_educatiion" />
+
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddAdultInLife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/do_you_have_at_least_one_adult_in_your_life_other_than_the_person_assigned_to_your_foster_care_or_il_case_that_you_can_go_to_for_advice_or_emotional_support" />
+
+
+<!--            <org.ovi.widget.OviDropDown-->
+<!--                android:id="@+id/ddHomeless"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/margin_16dp"-->
+<!--                app:dd_default_txt=""-->
+<!--                app:dd_hint=""-->
+<!--                app:dd_title="@string/have_you_been_homeless_at_least_once_in_the_past_two_years" />-->
+
+
+<!--            <org.ovi.widget.OviDropDown-->
+<!--                android:id="@+id/ddAlcohol"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/margin_16dp"-->
+<!--                app:dd_default_txt=""-->
+<!--                app:dd_hint=""-->
+<!--                app:dd_title="@string/in_the_past_two_years_have_you_participated_in_an_alcohol_or_drug_abuse_assessment_counseling" />-->
+
+
+<!--            <org.ovi.widget.OviDropDown-->
+<!--                android:id="@+id/ddJail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/margin_16dp"-->
+<!--                app:dd_default_txt=""-->
+<!--                app:dd_hint=""-->
+<!--                app:dd_title="@string/have_you_ever_been_in_a_jail_prison_correctional_facility_or_juvenile_or_community_detention_facility_at_least_once_in_the_past_two_years" />-->
+
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/have_you_given_birth_to_a_child_or_i_am_a_father_to_a_child_that_has_been_born_in_the_last_two_years" />
+
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddMedical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/do_you_have_a_medicaid_plan_or_some_other_health_insurance_coverage" />
+
+
+<!--            <org.ovi.widget.OviDropDown-->
+<!--                android:id="@+id/ddFinance"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/margin_16dp"-->
+<!--                app:dd_default_txt=""-->
+<!--                app:dd_hint=""-->
+<!--                app:dd_title="@string/do_you_feel_confident_in_your_abilities_to_live_independently_without_outside_financial_assistance" />-->
+
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddFoster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="@string/are_you_participating_in_one_of_the_following_independent_living_programs_extended_foster_care_efc_postsecondary_education_services_and_support_pess_or_aftercare_services" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

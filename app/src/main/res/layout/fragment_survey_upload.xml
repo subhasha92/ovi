@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/incHeader"
+        layout="@layout/include_survey_header_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/lLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:background="@drawable/bg_dash_grey_fill"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_24dp"
+        app:layout_constraintTop_toBottomOf="@id/incHeader">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:drawableStart="@drawable/ic_upload_icon"
+            android:drawablePadding="@dimen/padding_6dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:text="@string/upload_file_max_file_size_5mb"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/ts_14sp" />
+
+        <org.ovi.widget.OviButton
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:paddingStart="@dimen/margin_24dp"
+            android:paddingTop="@dimen/padding_5dp"
+            android:paddingEnd="@dimen/margin_24dp"
+            android:paddingBottom="@dimen/padding_5dp"
+            android:text="@string/upload"
+            android:textColor="@color/white_1000"
+            />
+
+    </LinearLayout>
+
+    <org.ovi.widget.OviLabeledEditText
+        android:id="@+id/etRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:background="@drawable/bg_grey_stroke"
+        android:fontFamily="More Fonts..."
+        android:hint="@string/type_your_text_here"
+        android:visibility="gone"
+        app:labelText="Enter Remarks"
+        app:labelTextColor="@color/text_color_dark_grey"
+        app:labelTextSize="16"
+        app:layout_constraintTop_toBottomOf="@id/lLay"
+         />
+
+
+    <include
+        android:id="@+id/incButton"
+        layout="@layout/include_survey_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/guideline_20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/please_enter_your_name"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/ts_20sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_top" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:fontFamily="@font/opensans_regular"
+            android:lineSpacingExtra="@dimen/size_5dp"
+            android:text="@string/use_an_email_address_that_we_can_use_to_communicate_important_information_so_that_you_can_stay_plugged_into_resources_and_events"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/ts_12sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lLay"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tvText"
+            >
+        <org.ovi.widget.OviLabeledEditText
+            android:id="@+id/etText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:background="@drawable/bg_grey_bordered"
+            android:fontFamily="@font/opensans_bold"
+            app:inputTextColor="@color/text_color_dark_grey"
+            app:labelText="Email"
+            android:hint="@string/enter_the_email"
+            app:labelTextColor="@color/text_color_dark_grey"
+            />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAddEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:drawableStart="@drawable/ic_fi_plus_brown"
+            android:drawablePadding="@dimen/padding_6dp"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/size_5dp"
+            android:text="Add another"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/ts_14sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/lLay" />
+
+        <org.ovi.widget.OviButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:text="@string/next"
+            app:layout_constraintBottom_toTopOf="@+id/tvSkip"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/skip"
+            android:visibility="gone"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_bottom"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start" />
+
+<org.ovi.widget.ProgressView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/progressView"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

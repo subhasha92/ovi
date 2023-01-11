@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/guideline_15dp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:padding="@dimen/padding_4dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ovi_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/text_color_login"
+            android:textSize="@dimen/ts_28sp"
+            app:layout_constraintStart_toStartOf="@id/ivLogo"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Title here"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintStart_toStartOf="@id/ivLogo"
+            app:layout_constraintTop_toBottomOf="@id/tvPrivacy" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/opensans_regular"
+            android:lineSpacingExtra="@dimen/size_4dp"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_habitat_est_eget_nisl_mauris_auctor_tincidunt_ut_eget_viverra_amet_tellus_sollicitudin_rutrum_tincidunt_sodales_adipiscing_felis_diam_vitae_sed_tempus_euismod_amet_interdum"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/ivLogo"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTableContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:lineSpacingExtra="@dimen/size_8dp"
+            android:text="Table of Contents \n\n
+1. Privacy Law and Mobile Apps\n
+2. Do I Need a Privacy Policy for My iOS App?\n
+3. Do I Need a Privacy Policy for My Android App?\n
+4. Cross-Platform Mobile App Privacy Policy\n
+5. Privacy Policy for iOS Apps\n
+  5.1.1. Check Which Privacy Laws Apply to You\n
+  5.2.2. Identify What Data Your App Collects\n
+  5.3.3. Explain How You Collect User Data\n
+  5.4.4. Explain How You Use User Data\n
+  5.5.5. Confirm Recipients of User Data are \n
+  Compliant with Apple's Policies."
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/ivLogo"
+            app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrivacyLaw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/_1_privacy_law_and_mobile_apps"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tvTableContent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/opensans_regular"
+            android:lineSpacingExtra="@dimen/size_4dp"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_habitat_est_eget_nisl_mauris_auctor_tincidunt_ut_eget_viverra_amet_tellus_sollicitudin_rutrum_tincidunt_sodales_adipiscing_felis_diam_vitae_sed_tempus_euismod_amet_interdum"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/ivLogo"
+            app:layout_constraintTop_toBottomOf="@id/tvPrivacyLaw" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

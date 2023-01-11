@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.amarjain07:StickyScrollView:1.0.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb591066f49eaa1155445760acda8931/transformed/jetified-StickyScrollView-1.0.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb591066f49eaa1155445760acda8931/transformed/jetified-StickyScrollView-1.0.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fb591066f49eaa1155445760acda8931/transformed/jetified-StickyScrollView-1.0.3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.amarjain07/StickyScrollView/1.0.3/a41805912593e9d94a6d990e1f8895a0184b7fc4/StickyScrollView-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

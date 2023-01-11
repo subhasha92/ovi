@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/vsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/lLayTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="Name"
+                    android:textColor="@color/grey3"
+                    android:textSize="@dimen/ts_14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Name"
+                    android:textColor="@color/text_color_dark_grey"
+                    android:textSize="@dimen/ts_16sp" />
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/cLayBottom"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="@string/ovi_label"
+                    android:textColor="@color/text_color_login"
+                    android:textSize="@dimen/ts_14sp"
+                    android:labelFor="@id/etInput"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12dp"
+                    android:gravity="center_vertical"
+                    app:boxBackgroundMode="none"
+                    app:hintEnabled="false"
+                    android:labelFor="@id/tvLabelInput"
+                    app:layout_constraintTop_toBottomOf="@id/tvLabelInput">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text_white_brown_border"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:gravity="center_vertical"
+                        android:paddingTop="@dimen/margin_14dp"
+                        android:paddingBottom="@dimen/margin_14dp"
+                        android:text="@string/log_in"
+                        android:contentDescription="@string/edit_text"
+                        android:textColorHint="@color/text_input_color_login"
+                        android:textSize="@dimen/ts_13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ivOption"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    app:srcCompat="@drawable/ic_grey_x"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/etInput"
+                    app:layout_constraintBottom_toBottomOf="@id/etInput"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <org.ovi.widget.OviDropDown
+                android:id="@+id/ddDrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:visibility="gone"
+                app:dd_default_txt=""
+                app:dd_hint=""
+                app:dd_title="" />
+
+            <org.ovi.widget.OviAutocomplete
+                android:id="@+id/acText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@drawable/bg_edit_text_white_brown_border"
+                app:inputTextColor="@color/text_color_dark_grey"
+                app:labelText="ZipCode"
+                app:labelTextColor="@color/text_color_login"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

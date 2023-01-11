@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.ovi.widget.OviLabeledEditText
+    android:id="@+id/etText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_30dp"
+    android:background="@drawable/bg_grey_bordered"
+    android:fontFamily="@font/opensans_bold"
+    app:inputTextColor="@color/text_color_dark_grey"
+    app:labelText="Email"
+    android:hint="@string/enter_the_email"
+    app:labelTextColor="@color/text_color_dark_grey"
+    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+    app:layout_constraintTop_toBottomOf="@id/tvText"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

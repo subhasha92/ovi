@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Default title"
+            android:paddingStart="@dimen/margin_6dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/ts_18sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvViewList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_event_list"
+            android:layout_marginTop="@dimen/margin_10dp" />
+
+
+    </LinearLayout>
+
+</layout>

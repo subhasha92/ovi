@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/guideline_20dp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/please_enter_youth_council_name"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/ts_20sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_top" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:fontFamily="@font/opensans_regular"
+            android:lineSpacingExtra="@dimen/size_5dp"
+            android:text="@string/this_information_will_help_us_when_we_evaluate_the_program"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/ts_12sp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:background="@drawable/bg_grey_bordered"
+            android:drawableStart="@drawable/ic_search__grey"
+            android:drawablePadding="@dimen/margin_14dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:paddingStart="@dimen/margin_14dp"
+            android:paddingEnd="@dimen/margin_14dp"
+            android:textSize="@dimen/ts_16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tvText" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin_24dp"
+            app:layout_constraintBottom_toTopOf="@id/tvSkip"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/etSearch">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvRecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    tools:listitem="@layout/item_rounded_blue_border"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_24dp"
+                    android:background="@drawable/bg_grey_bordered"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_the_value"
+                    android:padding="@dimen/margin_14dp"
+                    android:paddingStart="@dimen/margin_14dp"
+                    android:paddingEnd="@dimen/margin_14dp"
+                    android:textSize="@dimen/ts_16sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/tvText" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_12dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/skip"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="@dimen/ts_13sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/btnNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <org.ovi.widget.OviButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next_upper"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_bottom"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

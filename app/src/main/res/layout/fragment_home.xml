@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_bg">
+
+        <org.ovi.widget.WidgetHomeToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:toolbarTitle="OVI" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/start"
+                    layout="@layout/include_about_ovi_section"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/incUpcoming"
+                    layout="@layout/include_titled_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/incRegisterUser"
+                    layout="@layout/include_register_user_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/incErrorLayout"
+            layout="@layout/include_internal_server_error"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/incEmptyLayout"
+            layout="@layout/include_empty_layout"
+            android:visibility="gone" />
+
+
+        <org.ovi.widget.ProgressView
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

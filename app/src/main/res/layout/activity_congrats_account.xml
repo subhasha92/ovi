@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_1000"
+    tools:context=".feature.register.view.activity.CongratsAccountActivity">
+
+    <org.ovi.widget.OviTitledToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backIconEnabled="false"
+        app:endOptionIcon="@drawable/ic_grey_x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Join OVI network" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center"
+        android:maxWidth="238dp"
+        android:text="@string/congrats_your_account_is_ready"
+        android:textColor="@color/text_color_dark_grey"
+        android:textSize="@dimen/ts_20sp"
+        app:layout_constraintBottom_toTopOf="@id/lLay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_6dp"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:text="@string/this_is_your_registration_id_james_ovi_com"
+        android:textColor="@color/text_color_dark_grey"
+        android:textSize="@dimen/ts_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <LinearLayout
+        android:id="@+id/lLay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:background="@drawable/bg_edit_text_white_brown_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:text="@string/tell_us_a_little_more_about_you"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <org.ovi.widget.OviButton
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_50dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_50dp"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:text="@string/continue_"
+
+            />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:gravity="center"
+        android:text="@string/go_to_home"
+        android:textColor="@color/toolbar_title_color"
+        android:textSize="@dimen/ts_13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lLay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

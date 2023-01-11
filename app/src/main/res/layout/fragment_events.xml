@@ -1,0 +1,87 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_bg">
+
+        <include layout="@layout/guideline_15dp" />
+
+        <org.ovi.widget.WidgetHomeToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:toolbarTitle="Events" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_1dp"
+                android:layout_marginEnd="@dimen/margin_1dp"
+                android:orientation="vertical">
+
+
+                <include
+                    android:id="@+id/incRvUpcoming"
+                    layout="@layout/include_titled_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+                <include
+                    android:id="@+id/incRvInvitedFor"
+                    layout="@layout/include_titled_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/incRvUpcoming" />
+
+                <include
+                    android:id="@+id/incRvNextEvent"
+                    layout="@layout/include_titled_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/incRvInvitedFor" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/incErrorLayout"
+            layout="@layout/include_internal_server_error"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/incEmptyLayout"
+            android:visibility="gone"
+            layout="@layout/include_empty_layout"/>
+
+        <org.ovi.widget.ProgressView
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
+
+
+

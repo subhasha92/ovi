@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_rating_is_required">Rating is required</string>
+    <string name="error_msg_review_title_required">Title is required</string>
+    <string name="error_msg_review_review_required">Please write your review</string>
+
+    <!-- Network ErrorDTO Message -->
+    <string name="str_internet_connection_error">Internet connection error</string>
+    <string name="str_internal_server_error">Internal server error</string>
+    <string name="str_timeout_error">Temporary network error</string>
+    <string name="str_user_unauthorized_error">User not authorized error</string>
+    <string name="str_api_not_found_error">Not found</string>
+    <string name="str_json_syntax_mismatch_error">Json syntax mismatch</string>
+    <string name="str_bad_input">Bad Input</string>
+    <string name="str_connection_error">Server unreachable. Please try after sometime</string>
+    <string name="str_connect_error">Unable to connect</string>
+    <string name="str_unknown_error">Please try again later</string>
+    <string name="str_io_error">Input/Output error</string>
+    <string name="str_something_went_wrong">Something went wrong!</string>
+
+    <string name="password_instruction">Password Should contain:\n1.Atleast one UpperCase letter\n2.Atleast one LowerCase letter\n3.Atleast one digit\n4.Atleast one special character\n5.Minimum length should be 8.</string>
+
+
+</resources>

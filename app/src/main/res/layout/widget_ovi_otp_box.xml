@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/root_otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="6">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOtpBox1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text_white_brown_border"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/ts_15sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOtpBox2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text_white_brown_border"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/ts_15sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOtpBox3"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text_white_brown_border"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/ts_15sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOtpBox4"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text_white_brown_border"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/ts_15sp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOtpBox5"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text_white_brown_border"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/ts_15sp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOtpBox6"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text_white_brown_border"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/ts_15sp" />
+
+
+    </LinearLayout>
+
+</layout>

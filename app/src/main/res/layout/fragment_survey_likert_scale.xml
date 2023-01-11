@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/incHeader"
+        layout="@layout/include_survey_header_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLikertScale"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_6dp"
+        app:layout_constraintBottom_toTopOf="@id/etRemark"
+        app:layout_constraintTop_toBottomOf="@id/incHeader"
+        tools:listitem="@layout/item_likert_scale" />
+
+    <org.ovi.widget.OviLabeledEditText
+        android:id="@+id/etRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:background="@drawable/bg_grey_stroke"
+        android:hint="@string/type_your_text_here"
+        android:visibility="gone"
+        app:labelFont="@font/inter_medium"
+        app:labelText="Enter Remarks"
+        app:labelTextColor="@color/text_color_dark_grey"
+        app:labelTextSize="16"
+        app:layout_constraintBottom_toTopOf="@id/incButton" />
+
+
+    <include
+        android:id="@+id/incButton"
+        layout="@layout/include_survey_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

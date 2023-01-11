@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="disabled_blue">#D2D3D9</color>
+    <color name="text_color_login">#49566E</color>
+    <color name="text_input_color_login">#AAAAAA</color>
+    <color name="toolbar_title_color">#1E1F20</color>
+    <color name="text_color_grey">#4B4C4D</color>
+    <color name="grey2">#4F4F4F</color>
+    <color name="grey3">#99999C</color>
+    <color name="grey4">#6A6A6A</color>
+    <color name="grey5">#8C8C8C</color>
+    <color name="grey6">#BCBBC1</color>
+    <color name="grey7">#E6E6E6</color>
+    <color name="grey8">#FBFBFB</color>
+    <color name="grey_stroke">#D6D6D6</color>
+    <color name="grey_checkbox">#B4B4B6</color>
+    <color name="text_color_grey_2">#8E8E8E</color>
+    <color name="text_color_dark_grey">#212121</color>
+    <color name="text_dark_color">#2F2F2F</color>
+    <color name="light_blue">#3A6599</color>
+    <color name="cancel_blue">#007AFF</color>
+    <color name="light_soft_blue">#D2E3F7</color>
+    <color name="light_brown">#C9AB81</color>
+    <color name="bottom_line_color">#AC9F61</color>
+    <color name="navigation_brown">#F6F1EB</color>
+    <color name="main_screen_bg">#FCF8F2</color>
+    <color name="black_shadow">#1A000000</color>
+    <color name="login_bg">#FFFBF5</color>
+    <color name="light_pink">#EEC3D4</color>
+    <color name="dark_blue">#18315F</color>
+    <color name="signout_bg">#40403F</color>
+    <color name="signout_line">#33FFFFFF</color>
+    <color name="grey">#AFAFA5</color>
+    <color name="dark_pink">#FBA2C5</color>
+    <color name="light_green">#33BC28</color>
+    <color name="dark_grey">#645F59</color>
+    <color name="extra_light_brown">#E4D5C0</color>
+    <color name="dark_brown">#6F542F</color>
+    <color name="background">#E5E5E5</color>
+    <color name="line_color_light">#1A000000</color>
+    <color name="line_color">#33000000</color>
+    <color name="line_color_light_brown">#1AAC9F61</color>
+
+
+
+    <color name="bg_grey">#F7F7F7</color>
+
+    <!--Material Popup-->
+    <color name="mpm_material_grey_850">#303030</color>
+    <color name="mpm_material_grey_50">#fafafa</color>
+
+    <color name="mpm_black_12_opacity">#1F000000</color>
+    <color name="mpm_black_54_opacity">#8A000000</color>
+    <color name="mpm_black_87_opacity">#DE000000</color>
+
+    <color name="mpm_white_12_opacity">#1FFFFFFF</color>
+    <color name="mpm_white_70_opacity">#B3FFFFFF</color>
+    <color name="mpm_white">#FFFFFFFF</color>
+
+    <color name="hint_color">#B29EA4</color>
+    <color name="zendesk_color">#999999</color>
+    <color name="hwFeedGreenColor">#3B9B4B</color>
+    <color name="infoColor">#CDCBCD</color>
+    <color name="et_hint_color">#727272</color>
+    <color name="tmpYellow">#ffd448</color>
+    <color name="selected_green">#2EB644</color>
+    <color name="greenProgress">#2EB644</color>
+    <!--Material Popup-->
+
+
+
+</resources>

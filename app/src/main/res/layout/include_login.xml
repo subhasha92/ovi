@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <org.ovi.widget.OviLabeledEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/what_s_your_email_address"
+            android:inputType="textEmailAddress"
+            app:inputTextColor="@color/text_color_dark_grey"
+            app:labelText="Email address"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <org.ovi.widget.OviLabeledEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:hint="@string/enter_a_password"
+            android:inputType="textPassword"
+            app:inputTextColor="@color/text_color_dark_grey"
+            app:labelText="Password (min. 8 characters)"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail"
+            app:passwordToggleEnabled="true" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvForgetPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_7dp"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:text="@string/forgot_your_password_request_a_new_one"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+        <org.ovi.widget.OviButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_14dp"
+            android:enabled="false"
+            android:fontFamily="@font/opensans_semibold"
+            android:paddingTop="@dimen/margin_15dp"
+            android:paddingBottom="@dimen/margin_15dp"
+            android:text="@string/log_in"
+            android:textColor="@color/white_1000"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvForgetPass" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/or"
+            android:textColor="#AAAAAA"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintBottom_toTopOf="@id/tvLoginWithNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLoginWithNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:padding="@dimen/padding_5dp"
+            android:text="@string/log_in_with_phone_number"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintBottom_toTopOf="@id/tvSignUP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_14dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:padding="@dimen/padding_6dp"
+            android:text="@string/dont_have_an_account_join_ovi_network"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/ts_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
